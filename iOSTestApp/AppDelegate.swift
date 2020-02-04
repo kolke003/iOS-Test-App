@@ -22,21 +22,21 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //        let initParams = PendoInitParams()
 //
 //        initParams.visitorId = "testUser"
-        
+
 // VISITOR ARRAYS FOR NON-STATIC TESTING //
 // Iterate through Visitor IDs in array //
 //        let arrayVisitorId = ["mobileUserId1", "mobileUserId2", "mobileUserId3"]
 //        let arrayId = arrayVisitorId.randomElement()
 //        initParams.visitorId = arrayId
-        
+
 // Iterate through Visitor Data in array - TBD for next release //
 
 // !WARNING! //
 // INSERT PENDO API KEY AND UNCOMMENT BELOW //
 //        PendoManager.shared().initSDK(
-//        {INSERT KEY HERE},
+//            {INSERT KEY HERE},
 //        initParams: initParams) // call initSDK with initParams as a 2nd parameter.
-        
+//
         return true
     }
 
@@ -56,4 +56,3 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //       }
 
 }
-

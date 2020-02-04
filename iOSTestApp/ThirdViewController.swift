@@ -6,6 +6,7 @@
 //  Copyright © 2020 Joe Kolker. All rights reserved.
 //
 
+import Pendo
 import UIKit
 
 class ThirdViewController: UIViewController {
@@ -20,11 +21,11 @@ class ThirdViewController: UIViewController {
 // Uncomment anything below that contains `PendoManager.shared()...` //
     
     @IBAction func eventThree(_ sender: Any) {
-//        PendoManager.shared().track("mobileEventThree", properties: ["key1":"val1", "key2":"val2"])
+//        PendoManager.shared().track("mobileEventThree", properties: nil)
     }
     
     @IBAction func eventFour(_ sender: Any) {
-//        PendoManager.shared().track("mobileEventFour", properties: ["key1":"val1", "key2":"val2"])
+//        PendoManager.shared().track("mobileEventFour", properties: nil)
     }
     
     @IBAction func stateChangedBackClick(_ sender: Any) {
@@ -35,6 +36,7 @@ class ThirdViewController: UIViewController {
     
     @IBAction func logoutThirdView(_ sender: Any) {
         performSegue(withIdentifier: "logoutThirdViewSegue", sender: self)
+//        PendoManager.shared().track("Logout2", properties: ["startingViewController":"Third"])
     }
     
 }

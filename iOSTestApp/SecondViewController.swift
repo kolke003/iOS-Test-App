@@ -6,6 +6,7 @@
 //  Copyright © 2020 Joe Kolker. All rights reserved.
 //
 
+import Pendo
 import UIKit
 
 class SecondViewController: UIViewController {
@@ -20,11 +21,11 @@ class SecondViewController: UIViewController {
 // Uncomment anything below that contains `PendoManager.shared()...` //
     
     @IBAction func eventOne(_ sender: Any) {
-//        PendoManager.shared().track("mobileEventOne", properties: ["key1":"val1", "key2":"val2"])
+//        PendoManager.shared().track("mobileEventOne", properties: nil)
     }
     
     @IBAction func eventTwo(_ sender: Any) {
-//        PendoManager.shared().track("mobileEventTwo", properties: ["key1":"val1", "key2":"val2"])
+//        PendoManager.shared().track("mobileEventTwo", properties: nil)
     }
     
     @IBAction func stateChangeForwardClicked(_ sender: Any) {
@@ -35,5 +36,6 @@ class SecondViewController: UIViewController {
     
     @IBAction func logoutSecondView(_ sender: Any) {
         performSegue(withIdentifier: "logoutSecondViewSegue", sender: self)
+//        PendoManager.shared().track("Logout1", properties: ["startingViewController":"Second"])
     }
 }
