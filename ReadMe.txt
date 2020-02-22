@@ -17,13 +17,16 @@ Reach out to Joe Kolker via Slack for access if needed
 Note - Ensure you do any and all work in `iOSTestApp.xcworkspace` filepath
 
 Set your URL Scheme in Xcode project
-Under Info > URL Types, create a new URL by clicking the `+` button
+Under Info > URL Types, you should have an entry titled "pendo" - if not, create a new URL by clicking the `+` button
 Set URL Scheme 
-	Note, your URL scheme can be found under `subscription settings` > `mobile app name` > `app details` path on app.pendo.io
+	Note, your URL scheme can be found under `subscription settings` > `mobile app name` > `install settings` path on app.pendo.io
 Set Identifier to any name of your choosing (eg. pendo)
 
-Under AppDelegate.swift, uncomment anything that is denoted with a `!WARNING!` tag
-	Place API key within this file, look for {INSERT KEY HERE} tag (API key found in `subscription settings` > `mobile app name` > `app details` path on app.pendo.io)
+In iOSTestApp > AppDelegate.swift, uncomment anything that is denoted with a `!WARNING!` tag
+	Place API key within this file, look for {INSERT KEY HERE} tag (API key found in `subscription settings` > `mobile app name` > `app details` path on app.pendo.io). For example, if your api key is really-long-key, you'd replace
+	{INSERT KEY HERE}
+	with
+	"really-long-key"
 
 Under SecondViewController.swift, uncomment anything that is denoted with a `!WARNING!` tag
 
